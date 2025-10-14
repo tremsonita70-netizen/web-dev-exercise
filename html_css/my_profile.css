@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Fasthand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: pink;
+}
+
+.profile_area {
+    max-width: 556px;
+    margin: 50px auto;
+    background-color: #f7f6fb;
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(38, 143, 78, 0.242);*/
+    box-shadow: #3c40434d 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.profile_area {
+    color: #333;
+}
+
+.my-photo {
+    display: black;
+    border-radius: 50%;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+dl {
+    margin: 20px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2c3e50;
+
+}
+
+dd {
+    margin-top: 10px;
+    color: #555;
+}
+
+dd a {
+    color: revert;
+}
