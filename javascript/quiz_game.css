@@ -85,8 +85,6 @@ body {
     /* background: #dff3ff; */
     transform: translateY(-3px);
 }
-
-/* Hidden Class */
 .hidden {
     display: none;
 }

@@ -49,8 +49,6 @@ document.addEventListener("DOMContentLoaded",function(){
         Array.from(choices.children).forEach(btn => btn.disabled = true);
         nextBtn.classList.remove("hidden");
     }
-
-    // button.addEventListener("click",selectAnswer);
     function showResult() {
         document.getElementById("quiz").classList.add("hidden");
         result.classList.remove("hidden");
