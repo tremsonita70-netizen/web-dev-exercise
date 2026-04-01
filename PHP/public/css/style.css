@@ -1,0 +1,284 @@
+header {
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* កំណត់កម្ពស់ឱ្យច្បាស់ */
+    background-color: #5d4037;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f5f2;
+    margin: 0;
+    padding-top: 80px; /* សំខាន់ណាស់! រុញ Content ចុះក្រោមដើម្បីកុំឱ្យ Header បាំង */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* បន្ថែម margin ដើម្បីកុំឱ្យ header បាំង */
+}
+
+a {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    padding: 15px 25px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #8d6e63;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+a:hover {
+    background-color: #6d4c41;
+    /* transform: translateY(-5px) scale(1.05); ឱ្យវាហើរបន្តិច និងរីកធំបន្តិច */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+a[href="order_list"] {
+    background-color: #d4a373;
+}
+
+a[href="order_list"]:hover {
+    background-color: #bc8a5f;
+}
+/* MENU LIST*/
+
+.order-container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+h1 {
+    color:black;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+a[href="home"] {
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+a[href="home"]:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ៣. ស្ទាយផ្នែក Search Section */
+.search-section {
+    background-color: #fdfaf8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #f1ece8;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* ចន្លោះរវាង Input និង Button */
+}
+
+input[type="date"] {
+    padding: 10px 15px;
+    border: 1px solid #d4a373;
+    border-radius: 8px;
+    font-family: inherit;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 25px;
+    background-color: #8d6e63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #6d4c41;
+    transform: translateY(-2px);
+}
+
+/* ៤. ស្ទាយតារាង (Table) */
+.table-responsive {
+    overflow-x: auto; /* ជំនួយពេលមើលលើទូរស័ព្ទ */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #8d6e63;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    color: #4a3728;
+}
+
+/* ដាក់ពណ៌ឆ្លាស់គ្នាជួរដេក */
+tbody tr:nth-child(even) {
+    background-color: #fcfbf9;
+}
+
+tbody tr:hover {
+    background-color: #f5f0ed;
+}
+
+/* ស្ទាយ Link ID នៅក្នុងតារាង */
+td a {
+    /* color: #8d6e63; */
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d4a373;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+td a:hover {
+    background-color: #d4a373;
+    color: white;
+}
+a[href="/"]:hover {
+    background-color: #bc8a5f;
+}
+/* FORM MENU*/
+/* រៀបចំ Card ធំសម្រាប់ Form */
+.menu-form-container {
+    max-width: 450px;
+    margin: 40px auto 20px auto; /* រុញចុះក្រោមឱ្យផុត Header */
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-form-container h1 {
+    color: #5d4037;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* រៀបចំ Label និង Input ឱ្យនៅជួរគ្នា */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #8d6e63;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box; /* ការពារកុំឱ្យរីកហួសទំហំ */
+    transition: 0.3s;
+    outline: none;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #8d6e63;
+    box-shadow: 0 0 8px rgba(141, 110, 99, 0.2);
+}
+
+/* ស្ទីលសម្រាប់ Error List */
+.error-list {
+    background: #fff5f5;
+    color: #c53030;
+    padding: 10px 15px;
+    border-left: 4px solid #f56565;
+    border-radius: 5px;
+    list-style: none;
+    text-align: left;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+/* ស្ទីលប៊ូតុង Submit */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #8d6e63;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #6d4c41;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ស្ទីលប៊ូតុង Back */
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #a67c52;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}
